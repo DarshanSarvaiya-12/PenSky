@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenSky.in - ભારતીય શેરબજારનો ઈતિહાસ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            /* New Vibrant Color Scheme */
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            background-attachment: fixed;
+            color: #fff;
+            line-height: 1.8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Glass Morphism Container - Updated Color */
+        .container {
+            position: relative; /* Essential for logo to move inside this card */
+            max-width: 1500px; /* Increased card width */
+            width: 109%;
+            background: rgba(20, 30, 40, 0.9); /* Changed color for better contrast */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(25, 255, 255, 0.8);
+            padding: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.5);
+            overflow: hidden; /* Keeps the logo within bounds */
+        }
+
+        /* Bigger Floating Movable Logo */
+        #logo-header {
+            position: absolute; /* Changed to absolute to stay inside main card */
+            top: 20px;
+            left: 20px;
+            width: 180px; /* Increased Logo width */
+            height: 70px; /* Increased Logo height */
+            background: rgba(25, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(25, 255, 255, 0.4);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.6rem; /* Bigger Font for Logo */
+            color: #fff;
+            cursor: move;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            user-select: none;
+            touch-action: none;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-top: 60px; /* Space for the logo */
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        b {
+            color: #00f2fe; /* Bright Cyan color for highlighted text */
+            font-weight: bold;
+        }
+
+        /* Footer Card */
+        .footer-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 18px;
+            padding: 20px 60px;
+            border: 1px solid rgba(25, 255, 255, 0.2);
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .footer-card h2 {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Social Icons Styles */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-icons .fa-whatsapp:hover {
+            color: #25D366;
+        }
+
+        .social-icons .fa-linkedin:hover {
+            color: #0077B5;
+        }
+
+        .social-icons .fa-envelope:hover {
+            color: #EA4335; /* Gmail Red */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                margin-top: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            #logo-header {
+                width: 140px;
+                height: 60px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="main-card">
+        <div id="logo-header">PenSky.in</div>
+
+        <h1>ભારતીય શેરબજારનો ઈતિહાસ</h1>
+
+        <p>શેરબજાર કોઈપણ દેશની અર્થવ્યવસ્થાના વિકાસમાં મહત્વની ભૂમિકા ભજવે છે. શેરબજાર કંપનીઓને વિકાસ માટે મૂડી એકત્ર કરવાની તક આપે છે અને રોકાણકારોને પોતાની સંપત્તિ વધારવાની તક આપે છે. આજે ભારતમાં લાખો લોકો શેરબજારમાં રોકાણ કરે છે, પરંતુ ભારતીય શેરબજારની શરૂઆત લગભગ 150 વર્ષ પહેલા થઈ હતી.</p>
+
+        <p>ભારતીય શેરબજારનો ઈતિહાસ 1875માં મુંબઈથી શરૂ થયો હતો. તે સમયમાં થોડા શેરબ્રોકરો મુંબઈના ટાઉનહોલ પાસે આવેલા એક વટવૃક્ષ નીચે ભેગા થઈને શેરોની ખરીદી અને વેચાણ કરતા હતા. આ બ્રોકરો પછી મળીને <b>Bombay Stock Exchange (BSE)</b>ની સ્થાપના કરી. આ એશિયાનો પહેલો સ્ટોક એક્સચેન્જ હતો અને વિશ્વના સૌથી જૂના સ્ટોક એક્સચેન્જોમાંનો એક છે.</p>
+
+        <p>શેરબજારના શરૂઆતના સમયમાં ટ્રેડિંગ ખૂબ જ સરળ હતું. બ્રોકરો શેરના ભાવ બોલીને સોદા કરતા હતા અને તમામ વ્યવહારો કાગળ પર હાથથી નોંધવામાં આવતા હતા. તે સમયમાં કોઈ કમ્પ્યુટર અથવા ઓનલાઈન ટ્રેડિંગ સિસ્ટમ નહોતી. થોડા જ કંપનીઓ બજારમાં લિસ્ટેડ હતી અને ટ્રેડિંગનો વોલ્યુમ પણ આજે કરતાં ખૂબ ઓછો હતો.</p>
+
+        <p>20મી સદીના શરૂઆતના સમયમાં શેરબજાર ધીમે ધીમે વિકાસ પામવા લાગ્યું. વધુ કંપનીઓએ જાહેરમાંથી પૈસા એકત્ર કરવા માટે શેર બહાર પાડવા શરૂ કર્યા. લોકો સમજી ગયા કે શેર ખરીદવાથી તેઓ કંપનીના ભાગીદાર બની શકે છે. આ કારણે શેરબજારમાં રોકાણ કરવાની રસપ્રદતા વધવા લાગી.</p>
+
+        <p>ભારતને 1947માં સ્વતંત્રતા મળ્યા પછી સરકારને સમજાયું કે શેરબજારને યોગ્ય રીતે નિયંત્રિત કરવું જરૂરી છે. રોકાણકારોના હિતોને સુરક્ષિત રાખવા અને પારદર્શિતા જાળવવા માટે ઘણા નિયમો બનાવવામાં આવ્યા. 1956માં સિક્યોરિટીઝ કોન્ટ્રાક્ટ રેગ્યુલેશન એક્ટ પસાર કરવામાં આવ્યો, જેનો ઉદ્દેશ સ્ટોક એક્સચેન્જને નિયંત્રિત કરવાનો હતો.</p>
+
+        <p>ઘણા વર્ષો સુધી Bombay Stock Exchange ભારતમાં મુખ્ય સ્ટોક એક્સચેન્જ રહ્યું હતું. પરંતુ તે સમયમાં ટ્રેડિંગ પ્રક્રિયા ધીમી અને ઓછી પારદર્શક હતી. 1990ના દાયકામાં ભારતના નાણાકીય ક્ષેત્રમાં મોટા સુધારા થયા, જેના કારણે શેરબજારમાં મોટા પરિવર્તન આવ્યા.</p>
+
+        <p>આ સમય દરમિયાન 1992માં <b>National Stock Exchange (NSE)</b>ની સ્થાપના થઈ. NSEએ સંપૂર્ણપણે કમ્પ્યુટર આધારિત ટ્રેડિંગ સિસ્ટમ શરૂ કરી. આથી ટ્રેડિંગ વધુ ઝડપી, પારદર્શક અને સમગ્ર દેશના રોકાણકારો માટે સરળ બન્યું.</p>
+
+        <p>આ સાથે જ <b>SEBI (Securities and Exchange Board of India)</b>ને શેરબજારના મુખ્ય નિયામક તરીકે વધુ સત્તા આપવામાં આવી. SEBIનું મુખ્ય કાર્ય રોકાણકારોના હિતોની સુરક્ષા કરવું, છેતરપિંડી રોકવી અને બજારમાં પારદર્શિતા જાળવવી છે.</p>
+
+        <p>ટેકનોલોજીના વિકાસ સાથે શેરબજાર ફિઝિકલ ટ્રેડિંગ ફ્લોરમાંથી ઇલેક્ટ્રોનિક ટ્રેડિંગ પ્લેટફોર્મ પર પરિવર્તિત થયું. આજે રોકાણકારોને સ્ટોક એક્સચેન્જ સુધી જવાની જરૂર નથી. મોબાઈલ એપ્સ અને ઓનલાઈન પ્લેટફોર્ દ્વારા સેકન્ડોમાં શેર ખરીદી અને વેચી શકાય છે.</p>
+
+        <p>ડિમેટ એકાઉન્ટની શરૂઆત પણ શેરબજાર માટે એક મહત્વપૂર્ણ પગલું હતું. અગાઉ શેર કાગળના સ્વરૂપમાં મળતા હતા, જે ખોવાઈ શકે અથવા નુકસાન પામી શકે. ડિમેટ સિસ્ટમ દ્વારા શેરોને ડિજિટલ સ્વરૂપમાં બદલવામાં આવ્યા, જેનાથી ટ્રેડિંગ વધુ સુરક્ષિત અને સરળ બન્યું.</p>
+
+        <p>આજે ભારતીય શેરબજાર ખૂબ ઝડપથી વિકસતું બજાર બની ગયું છે. હજારો કંપનીઓ સ્ટોક એક્સચેન્જમાં લિસ્ટેડ છે અને લાખો રોકાણકારો તેમાં ભાગ લે છે. <b>Nifty</b> અને <b>Sensex</b> જેવા મુખ્ય માર્કેટ ઈન્ડેક્સ સમગ્ર બજારની કામગીરી દર્શાવે છે.</p>
+
+        <p>એક વટવૃક્ષ નીચે થોડા બ્રોકરો દ્વારા શરૂ થયેલું ભારતીય શેરબજાર આજે અબજો રૂપિયાના રોજિંદા વ્યવહારો કરતું આધુનિક ડિજિટલ બજાર બની ગયું છે. ટેકનોલોજી, નિયમન અને આર્થિક વિકાસ સાથે ભારતીય શેરબજાર સતત આગળ વધી રહ્યું છે અને દેશના આર્થિક વિકાસમાં મહત્વપૂર્ણ યોગદાન આપી રહ્યું છે. </p>
+    </div>
+
+    <div class="footer-card">
+        <h2><b>Darshan Sarvaiya.</b></h2>
+        <div class="social-icons">
+            <a href="https://wa.me/+917016274277" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank" title="Visit LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:darshansarvaiya818@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script>
+        // Movable Logo Logic (Inside Parent Card)
+        const logo = document.getElementById("logo-header");
+        const container = document.getElementById("main-card");
+        let isDragging = false;
+        let offset = { x: 0, y: 0 };
+
+        function startDrag(e) {
+            isDragging = true;
+            const clientX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+            const clientY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+            
+            offset.x = clientX - logo.offsetLeft;
+            offset.y = clientY - logo.offsetTop;
+        }
+
+        function drag(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            
+            const clientX = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+            const clientY = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+
+            let newX = clientX - offset.x;
+            let newY = clientY - offset.y;
+
+            // Keep within main-card bounds
+            const maxX = container.clientWidth - logo.offsetWidth;
+            const maxY = container.clientHeight - logo.offsetHeight;
+
+            newX = Math.max(0, Math.min(newX, maxX));
+            newY = Math.max(0, Math.min(newY, maxY));
+
+            logo.style.left = newX + "px";
+            logo.style.top = newY + "px";
+        }
+
+        function stopDrag() {
+            isDragging = false;
+        }
+
+        // Mouse Events
+        logo.addEventListener("mousedown", startDrag);
+        window.addEventListener("mousemove", drag);
+        window.addEventListener("mouseup", stopDrag);
+
+        // Touch Events
+        logo.addEventListener("touchstart", startDrag);
+        window.addEventListener("touchmove", drag, { passive: false });
+        window.addEventListener("touchend", stopDrag);
+    </script>
+</body>
+</html>
